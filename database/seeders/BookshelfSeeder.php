@@ -16,9 +16,11 @@ class BookshelfSeeder extends Seeder
     {
         DB::table("Bookshelves")->insert([
             ['code' =>'BKS001', 'name'=> 'Novel'],
-            ['code' =>'BKS002', 'name'=> 'Educational']
+            ['code' =>'BKS002', 'name'=> 'Fantasi'],
+            ['code' =>'BKS003', 'name'=> 'Sejarah'],
+            ['code' =>'BKS004', 'name'=> 'Komik']
         ]);
 
-        Bookshelf::create(['code' => 'BKS003','name' => 'History']);
+        Bookshelf::create(['code' => 'BKS005','name' => 'Novel']);
     }
 }
